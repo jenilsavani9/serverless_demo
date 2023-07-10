@@ -1,0 +1,28 @@
+{
+  "name": "todo-list",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "main": "dist/app.js",
+    "start": "tsc && node dist/app.js",
+    "lint": "eslint . --ext .ts",
+    "sls": "tsc && serverless offline"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@typescript-eslint/eslint-plugin": "^5.61.0",
+    "@typescript-eslint/parser": "^5.61.0",
+    "eslint": "^8.44.0",
+    "serverless-offline": "^12.0.4",
+    "serverless-plugin-typescript": "^2.1.5",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "serverless-http": "^3.2.0"
+  }
+}

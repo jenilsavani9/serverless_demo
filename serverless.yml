@@ -1,0 +1,15 @@
+service: todo-list
+plugins:
+  - serverless-offline
+provider:
+  name: aws
+  runtime: nodejs18.x
+  stage: dev
+  region: us-east-1
+functions:
+  app:
+    handler: dist/app.handler
+    events:
+      - http:
+          path: /
+          method: get
