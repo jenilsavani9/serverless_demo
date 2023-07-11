@@ -12,7 +12,7 @@ Tag: Lambda, express
 
 Create NPM project and install serverless into our project
 
-```json
+```bash
 $ npm init -y
 $ npm install -g serverless
 $ serverless
@@ -20,7 +20,7 @@ $ serverless
 
 after selecting `AWS - Node.js - Http API` from serverless project options install express and serverless-http.
 
-```json
+```bash
 $ npm i express serverless-http body-parser
 $ npm i -save-dev @types/express eslint typescript
 ```
@@ -28,7 +28,6 @@ $ npm i -save-dev @types/express eslint typescript
 now create `tsconfig.json` file.
 
 ```json
-// tsconfig.json
 {
   "compilerOptions": {
     "module": "commonjs",
