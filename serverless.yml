@@ -1,0 +1,32 @@
+service: http-api
+frameworkVersion: "3"
+plugins:
+  - serverless-offline
+provider:
+  name: aws
+  runtime: nodejs18.x
+functions:
+  GetTodos:
+    handler: dist/app.handler
+    events:
+      - httpApi:
+          path: /
+          method: get
+  AddTodos:
+    handler: dist/app.handler
+    events:
+      - httpApi:
+          path: /
+          method: post
+  EditTodos:
+    handler: dist/app.handler
+    events:
+      - httpApi:
+          path: /{id}
+          method: put
+  DeleteTodos:
+    handler: dist/app.handler
+    events:
+      - httpApi:
+          path: /{id}
+          method: delete
