@@ -11,22 +11,13 @@ functions:
     events:
       - httpApi:
           path: /
-          method: get
-  AddTodos:
-    handler: dist/app.handler
-    events:
+          method: GET
       - httpApi:
           path: /
-          method: post
-  EditTodos:
-    handler: dist/app.handler
-    events:
+          method: POST
       - httpApi:
           path: /{id}
-          method: put
-  DeleteTodos:
-    handler: dist/app.handler
-    events:
+          method: PUT
       - httpApi:
           path: /{id}
-          method: delete
+          method: DELETE
